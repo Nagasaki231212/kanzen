@@ -1,0 +1,81 @@
+es:
+  app_name: 'Listas De Productos'
+  title_name: 'Mis Productos'
+  activerecord:
+    models:
+      product: Producto
+      user: User
+      category: Categoria
+    attributes:
+      product:
+        title: 'Titulo'
+        description: 'Descripcion'
+        price: 'Precio'
+        photo: 'Foto'
+      user: 
+        email: 'Correo electronico'
+        username: 'Nombre de usuario'
+        password: 'Contraseña'
+      category: 
+        name: 'Nombre'
+  common:
+    confirm: '¿Estas Seguro?'
+    back: 'Volver'
+    not_logged_in: 'Tienes que iniciar sesión o crear una cuenta'
+    not_authorized: 'No tienes permisos para esta acción'
+  shared:
+    header:
+      add: 'Añadir producto'
+      login: 'Acceso'
+      register: 'Registro'
+      logout: 'Salir'
+  authentication:
+    users:
+      create:
+        created: 'Tu cuenta se ha creado!'
+    sessions:
+      create:
+        created: 'Bienvenido!'
+        failed:  'Acceso Invalido'
+      destroy:
+        destroyed: 'Tu sesion ha terminado! hasta la proxima'
+  products:
+    edit:
+      title: 'Editar Producto'
+    new:
+      title: 'Añadir Nuevo Productos'
+    index:
+      title: 'Compras Realizadas'
+      all: 'Todos'
+      min_price: 'Precio Minimo'
+      max_price: 'Precio Maximo'
+      query_text: '¿Qué Deseas Buscar?'
+      expensive: 'Mas Caros'
+      cheapest: 'Mas baratos'
+      newest: 'Añadidos recientemente'
+    show:
+      edit: 'Editar producto'
+      delete: 'Borrar Producto'
+    create:
+      created: 'Tu Producto se ah creado correctamente'
+    update:
+      updated: 'Tu Producto se ah actualizado correctamente'
+    destroy:
+      destroyed: 'Tu producto se ha eliminado correctamente'
+  categories:
+    category:
+      edit: 'Editar'
+      delete: 'Borrar'
+    index:
+      title: 'Categorías'
+      new: 'Añadir categoría'
+    edit:
+      title: 'Editar categoría'
+    create:
+      created: 'Tu categoría se ha creado correctamente'
+    update:
+      updated: 'Tu categoría se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu categoría se ha eliminado correctamente'
+    new:
+      title: 'Añadir categoría'

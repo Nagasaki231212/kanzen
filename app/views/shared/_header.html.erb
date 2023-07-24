@@ -1,0 +1,9 @@
+<%= link_to products_path do %>
+  <h1><%= t('title_name') %></h1>
+<% end %>
+
+<%= link_to t('.add'), new_product_path if Current.user %>
+<%= link_to t('.Categorias'), categories_path if Current.user&.admin? %>
+<%= link_to t('.login'), new_session_path unless Current.user %>
+<%= link_to t('.register'), new_user_path unless Current.user %> 
+<%= button_to t('.logout'), session_path(Current.user.id), method: :delete, data: { confirm: t('common.comfirm') } if Current.user %>
